@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<svg width="32" height="32" 
+     viewPort="0 0 32 32" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+
+    <ellipse cx="16" cy="16" rx="15" ry="7.5" 
+        fill="white" stroke="black"/>
+    
+    <path d="M 16 22.1 A 0.8 0.4 1 1 1 7 25 A 1 1 1 1 0 8 22"
+        fill="white" stroke="black"/>
+        
+    <ellipse cx="16" cy="16" rx="14.5" ry="7" 
+        fill="white"/>
+        
+    <text x="5" y="18" 
+        font-family="Arial" 
+        font-size="5"
+        fill="red">
+       $!!RHS!!$
+    </text>
+
+</svg>

@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name        Reddit History Sanitizer
-// @namespace   Reddit History Sanitizer
+// @namespace   https://github.com/ryanford-frontend/Reddit-History-Sanitizer
 // @description Obfuscate and Delete Reddit Comments Older than User Specified Time
+// @downloadURL https://raw.githubusercontent.com/ryanford-frontend/Reddit-History-Sanitizer/master/RedditHistorySanitizer.js
+// @icon        https://raw.githubusercontent.com/ryanford-frontend/Reddit-History-Sanitizer/master/rhs.svg
 // @include     *.reddit.com/user/*
-// @version     1.0
+// @version     1.0.1
 // ==/UserScript==
 
 // change age to extend or shorten timeframe to keep comments (in days)
