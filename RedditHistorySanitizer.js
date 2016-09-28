@@ -3,7 +3,7 @@
 // @namespace   https://github.com/ryanford-frontend/Reddit-History-Sanitizer
 // @description Obfuscate and Delete Reddit Comments Older than User Specified Time
 // @downloadURL https://raw.githubusercontent.com/ryanford-frontend/Reddit-History-Sanitizer/master/RedditHistorySanitizer.js
-// @icon        https://raw.githubusercontent.com/ryanford-frontend/Reddit-History-Sanitizer/master/rhs.svg
+// @icon        data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+Cjxzdmcgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiAKICAgICB2aWV3UG9ydD0iMCAwIDMyIDMyIiB2ZXJzaW9uPSIxLjEiCiAgICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCiAgICA8ZWxsaXBzZSBjeD0iMTYiIGN5PSIxNiIgcng9IjE1IiByeT0iNy41IiAKICAgICAgICBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJibGFjayIvPgogICAgCiAgICA8cGF0aCBkPSJNIDE2IDIyLjEgQSAwLjggMC40IDEgMSAxIDcgMjUgQSAxIDEgMSAxIDAgOCAyMiIKICAgICAgICBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJibGFjayIvPgogICAgICAgIAogICAgPGVsbGlwc2UgY3g9IjE2IiBjeT0iMTYiIHJ4PSIxNC41IiByeT0iNyIgCiAgICAgICAgZmlsbD0id2hpdGUiLz4KICAgICAgICAKICAgIDx0ZXh0IHg9IjUiIHk9IjE4IiAKICAgICAgICBmb250LWZhbWlseT0iQXJpYWwiIAogICAgICAgIGZvbnQtc2l6ZT0iNSIKICAgICAgICBmaWxsPSJyZWQiPgogICAgICAgJCEhUkhTISEkCiAgICA8L3RleHQ+Cgo8L3N2Zz4=
 // @include     *.reddit.com/user/*
 // @version     1.0.1
 // ==/UserScript==
