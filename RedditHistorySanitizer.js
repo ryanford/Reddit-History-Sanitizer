@@ -5,7 +5,7 @@
 // @downloadURL https://raw.githubusercontent.com/ryanford-frontend/Reddit-History-Sanitizer/master/RedditHistorySanitizer.js
 // @icon        data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+Cjxzdmcgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiAKICAgICB2aWV3UG9ydD0iMCAwIDMyIDMyIiB2ZXJzaW9uPSIxLjEiCiAgICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCiAgICA8ZWxsaXBzZSBjeD0iMTYiIGN5PSIxNiIgcng9IjE1IiByeT0iNy41IiAKICAgICAgICBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJibGFjayIvPgogICAgCiAgICA8cGF0aCBkPSJNIDE2IDIyLjEgQSAwLjggMC40IDEgMSAxIDcgMjUgQSAxIDEgMSAxIDAgOCAyMiIKICAgICAgICBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJibGFjayIvPgogICAgICAgIAogICAgPGVsbGlwc2UgY3g9IjE2IiBjeT0iMTYiIHJ4PSIxNC41IiByeT0iNyIgCiAgICAgICAgZmlsbD0id2hpdGUiLz4KICAgICAgICAKICAgIDx0ZXh0IHg9IjUiIHk9IjE4IiAKICAgICAgICBmb250LWZhbWlseT0iQXJpYWwiIAogICAgICAgIGZvbnQtc2l6ZT0iNSIKICAgICAgICBmaWxsPSJyZWQiPgogICAgICAgJCEhUkhTISEkCiAgICA8L3RleHQ+Cgo8L3N2Zz4=
 // @include     *.reddit.com/user/*
-// @version     1.0.3
+// @version     1.0.2
 // @license     https://opensource.org/licenses/MIT
 // ==/UserScript==
 
@@ -21,12 +21,11 @@ function findOldComments() {
     nextButton = document.querySelector("div.content > div#siteTable > div.nav-buttons > span.nextprev > span.next-button > a"),
     i = comments.length;
   while (i--) {
-    let timeSincePost = comments[i].querySelector("div.entry > p.tagline > time").innerHTML.toLowerCase();
-      if (timeSincePost.indexOf("day") > 0 && timeSincePost.match(/\d{1,2}/) > age) {
-        toDelete.push(comments[i].getAttribute("id"));
-      } else if (timeSincePost.indexOf("month") > 0 && age < 29) {
-        toDelete.push(comments[i].getAttribute("id"));
-      } else if (timeSincePost.indexOf("year") > 0 && age < 364) {
+    let timeSincePost = comments[i].querySelector("div.entry > p.tagline > time").getAttribute('datetime'),
+        currentDate = Date.now(),
+        commentDate = Number(new Date(timeSincePost)),
+        daysSincePost = Math.floor((currentDate - commentDate)/1000/60/60/24);
+      if (daysSincePost > age) {
         toDelete.push(comments[i].getAttribute("id"));
       }
   }
