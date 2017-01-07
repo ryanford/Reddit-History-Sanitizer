@@ -24,9 +24,9 @@ function findOldComments() {
     let timeSincePost = comments[i].querySelector("div.entry > p.tagline > time").innerHTML.toLowerCase();
       if (timeSincePost.indexOf("day") > 0 && timeSincePost.match(/\d{1,2}/) > age) {
         toDelete.push(comments[i].getAttribute("id"));
-      } else if (timeSincePost.indexOf("month") > 0 && age < 30) {
+      } else if (timeSincePost.indexOf("month") > 0 && age < 29) {
         toDelete.push(comments[i].getAttribute("id"));
-      } else if (timeSincePost.indexOf("year") > 0 && age < 365) {
+      } else if (timeSincePost.indexOf("year") > 0 && age < 364) {
         toDelete.push(comments[i].getAttribute("id"));
       }
   }
