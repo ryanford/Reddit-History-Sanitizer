@@ -8,4 +8,4 @@ This was created after use of [Reddit Secure Delete - Only Comments More Than 7 
 
 If there are other features you would like added, or bugs are found, just report on greasyfork [Reddit History Sanitizer](https://greasyfork.org/en/scripts/23605-reddit-history-sanitizer) or on the github [Reddit-History-Sanitizer](https://github.com/ryanford-frontend/Reddit-Comment-Sanitizer)
 
-\* Take note, this was made with es6 javascript promises and generators, so if you're using some Win95 browser like IE, it may not work as expected.
+\* Take note, this was made with es6 javascript promises and generators, so if you're using an older browser, it may not work as expected.
